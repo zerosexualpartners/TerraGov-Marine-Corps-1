@@ -29,13 +29,14 @@ General Public License version 3.
 
 
 <h3 id="modules">Modules
-<aside>(11 modules,
-    48/4069 macros, 1.2%)</aside></h3>
+<aside>(12 modules,
+    51/4069 macros, 1.3%)</aside></h3>
 <ul class="index-tree">
     <li class="has-children"><span title="code">code</span><ul class="index-tree">
     <li class="has-children"><span title="code&#x2F;__DEFINES">__DEFINES</span><ul class="index-tree">
     <li><a href="code/__DEFINES/MC.html" title="code&#x2F;__DEFINES&#x2F;MC.dm">MC</a> - SubSystem flags (Please design any new flags so that the default is off, to make adding flags to subsystems easier)</li>
     <li><a href="code/__DEFINES/admin.html" title="code&#x2F;__DEFINES&#x2F;admin.dm">admin</a></li>
+    <li><a href="code/__DEFINES/atmospherics.html" title="code&#x2F;__DEFINES&#x2F;atmospherics.dm">atmospherics</a></li>
     <li><a href="code/__DEFINES/coordinates.html" title="code&#x2F;__DEFINES&#x2F;coordinates.dm">coordinates</a></li>
     <li class="has-children"><span title="code&#x2F;__DEFINES&#x2F;dcs">dcs</span><ul class="index-tree">
     <li><a href="code/__DEFINES/dcs/flags.html" title="code&#x2F;__DEFINES&#x2F;dcs&#x2F;flags.dm">flags</a></li>
@@ -58,7 +59,7 @@ Thanks to forum_account for saving the day, the library can be found
 
 
 <h3 id="types">Types
-<aside>(58 detailed/171 documented/10664 total, 1.6%)</aside></h3>
+<aside>(59 detailed/173 documented/10664 total, 1.6%)</aside></h3>
 <ul class="index-tree">
     <li><a href="global.html" title="(global)">(global)</a></li>
     <li class="has-children"><span title="&#x2F;area">area</span><ul class="index-tree">
@@ -187,7 +188,10 @@ and don't call start() in a loop that will be repeated otherwise it'll get spamm
     <li><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;attachable&#x2F;suppressor">suppressor</span> - Muzzle Attachments</li>
     </ul></li>
     <li><span class="no-substance">book&#x2F;</span><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;book&#x2F;manual">manual</span> - MANUALS (BOOKS)</li>
-    <li><span class="no-substance">clothing&#x2F;under&#x2F;</span><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;clothing&#x2F;under&#x2F;pizza">pizza delivery uniform</span> - Civilians</li>
+    <li class="has-children"><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;clothing">clothing</span><ul class="index-tree">
+    <li><span class="no-substance">suit&#x2F;</span><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;clothing&#x2F;suit&#x2F;apron">apron</span> - Job related clothing</li>
+    <li><span class="no-substance">under&#x2F;</span><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;clothing&#x2F;under&#x2F;pizza">pizza delivery uniform</span> - Civilians</li>
+    </ul></li>
     <li><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;coin">Coin</span> - Coin</li>
     <li class="has-children"><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;explosive">explosive</span><ul class="index-tree">
     <li><span class="no-substance">grenade&#x2F;</span><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;explosive&#x2F;grenade&#x2F;frag">\improper M40 HEDP grenade</span> - <em><strong>GRENADES</strong></em></li>
@@ -281,6 +285,7 @@ TO-DO -- Using it as a power measurement tool for cables etc. Nannek.</li>
     </ul></li>
     <li class="has-children"><span title="&#x2F;obj&#x2F;structure">structure</span><ul class="index-tree">
     <li><span class="no-substance">alien&#x2F;</span><a href="obj/structure/alien/weeds.html" title="&#x2F;obj&#x2F;structure&#x2F;alien&#x2F;weeds">weeds</a></li>
+    <li><span class="no-substance">bed&#x2F;chair&#x2F;</span><a href="obj/structure/bed/chair/janicart.html" title="&#x2F;obj&#x2F;structure&#x2F;bed&#x2F;chair&#x2F;janicart">janicart</a> - old style janicart</li>
     <li><a href="obj/structure/cable.html" title="&#x2F;obj&#x2F;structure&#x2F;cable">power cable</a></li>
     <li class="has-children"><span class="no-substance">closet&#x2F;</span><span class="no-substance" title="&#x2F;obj&#x2F;structure&#x2F;closet&#x2F;secure_closet">secure_closet</span><ul class="index-tree">
     <li><span class="no-substance" title="&#x2F;obj&#x2F;structure&#x2F;closet&#x2F;secure_closet&#x2F;marine">marine&#x27;s locker</span> - Marine Gear</li>
@@ -321,7 +326,7 @@ TO-DO -- Using it as a power measurement tool for cables etc. Nannek.</li>
 </main>
 <footer>
     tgmc.dme
-    <a href="https://github.com/tgstation/TerraGov-Marine-Corps/tree/e0726fd99fe539ac289070f325d4e48af5729656">e0726fd</a>
+    <a href="https://github.com/tgstation/TerraGov-Marine-Corps/tree/eea6a54d490f46cd529ba5ae600cbb31077bc107">eea6a54</a>
         (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.2.1</a></footer>
 </body>
 </html>

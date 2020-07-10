@@ -66,7 +66,7 @@ Thanks to forum_account for saving the day, the library can be found
 
 
 <h3 id="types">Types
-<aside>(104 detailed/228 documented/11247 total, 2%)</aside></h3>
+<aside>(108 detailed/231 documented/11225 total, 2.1%)</aside></h3>
 <ul class="index-tree">
     <li><a href="global.html" title="(global)">(global)</a></li>
     <li class="has-children"><span title="&#x2F;area">area</span><ul class="index-tree">
@@ -151,7 +151,6 @@ parameters.</li>
     <li><span class="no-substance" title="&#x2F;datum&#x2F;supply_packs&#x2F;attachments">attachments</span> - ATTACHMENTS</li>
     <li><span class="no-substance" title="&#x2F;datum&#x2F;supply_packs&#x2F;clothing">clothing</span> - CLOTHING</li>
     <li><span class="no-substance" title="&#x2F;datum&#x2F;supply_packs&#x2F;engineering">engineering</span> - ENGINEERING</li>
-    <li><span class="no-substance" title="&#x2F;datum&#x2F;supply_packs&#x2F;hardpoints">hardpoints</span> - HARDPOINT MODULES (and their ammo)</li>
     <li><span class="no-substance" title="&#x2F;datum&#x2F;supply_packs&#x2F;imports">imports</span> - Imports</li>
     <li><span class="no-substance" title="&#x2F;datum&#x2F;supply_packs&#x2F;medical">medical</span> - MEDICAL</li>
     <li><span class="no-substance" title="&#x2F;datum&#x2F;supply_packs&#x2F;operations">operations</span> - OPERATIONS</li>
@@ -246,6 +245,7 @@ and don't call start() in a loop that will be repeated otherwise it'll get spamm
     <li><span class="no-substance">under&#x2F;</span><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;clothing&#x2F;under&#x2F;pizza">pizza delivery uniform</span> - Civilians</li>
     </ul></li>
     <li><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;coin">Coin</span> - Coin</li>
+    <li><a href="obj/item/defibrillator.html" title="&#x2F;obj&#x2F;item&#x2F;defibrillator">emergency defibrillator</a></li>
     <li class="has-children"><span title="&#x2F;obj&#x2F;item&#x2F;explosive">explosive</span><ul class="index-tree">
     <li><span class="no-substance">grenade&#x2F;</span><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;explosive&#x2F;grenade&#x2F;frag">\improper M40 HEDP grenade</span> - <em><strong>GRENADES</strong></em></li>
     <li class="has-children"><a href="obj/item/explosive/mine.html" title="&#x2F;obj&#x2F;item&#x2F;explosive&#x2F;mine">\improper M20 Claymore anti-personnel mine</a> - Mines<ul class="index-tree">
@@ -319,6 +319,7 @@ TO-DO -- Using it as a power measurement tool for cables etc. Nannek.</li>
     <li class="has-children"><a href="obj/machinery/atmospherics.html" title="&#x2F;obj&#x2F;machinery&#x2F;atmospherics">atmospherics</a><ul class="index-tree">
     <li><span class="no-substance">components&#x2F;unary&#x2F;</span><a href="obj/machinery/atmospherics/components/unary/vent_scrubber.html" title="&#x2F;obj&#x2F;machinery&#x2F;atmospherics&#x2F;components&#x2F;unary&#x2F;vent_scrubber">air scrubber</a></li>
     </ul></li>
+    <li><a href="obj/machinery/body_scanconsole.html" title="&#x2F;obj&#x2F;machinery&#x2F;body_scanconsole">Body Scanner Console</a></li>
     <li><a href="obj/machinery/camera.html" title="&#x2F;obj&#x2F;machinery&#x2F;camera">security camera</a></li>
     <li class="has-children"><span title="&#x2F;obj&#x2F;machinery&#x2F;computer">computer</span><ul class="index-tree">
     <li><a href="obj/machinery/computer/camera.html" title="&#x2F;obj&#x2F;machinery&#x2F;computer&#x2F;camera">security camera console</a></li>
@@ -337,7 +338,10 @@ TO-DO -- Using it as a power measurement tool for cables etc. Nannek.</li>
     <li><span class="no-substance" title="&#x2F;obj&#x2F;machinery&#x2F;mineral&#x2F;unloading_machine">unloading machine</span> - Unloading unit</li>
     </ul></li>
     <li><a href="obj/machinery/nuclearbomb.html" title="&#x2F;obj&#x2F;machinery&#x2F;nuclearbomb">nuclear fission explosive</a></li>
-    <li><span class="no-substance">power&#x2F;</span><a href="obj/machinery/power/port_gen.html" title="&#x2F;obj&#x2F;machinery&#x2F;power&#x2F;port_gen">portable generator</a></li>
+    <li class="has-children"><span title="&#x2F;obj&#x2F;machinery&#x2F;power">power</span><ul class="index-tree">
+    <li><a href="obj/machinery/power/apc.html" title="&#x2F;obj&#x2F;machinery&#x2F;power&#x2F;apc">area power controller</a></li>
+    <li><a href="obj/machinery/power/port_gen.html" title="&#x2F;obj&#x2F;machinery&#x2F;power&#x2F;port_gen">portable generator</a></li>
+    </ul></li>
     <li><a href="obj/machinery/reagentgrinder.html" title="&#x2F;obj&#x2F;machinery&#x2F;reagentgrinder">\improper All-In-One Grinder</a></li>
     <li class="has-children"><a href="obj/machinery/smartfridge.html" title="&#x2F;obj&#x2F;machinery&#x2F;smartfridge">\improper SmartFridge</a><ul class="index-tree">
     <li><span class="no-substance" title="&#x2F;obj&#x2F;machinery&#x2F;smartfridge&#x2F;seeds">\improper MegaSeed Servitor</span> - Smartfridge types</li>
@@ -386,6 +390,7 @@ you want to show on the map, which you usually attach to &quot;vis_contents&quot
     <li><span class="no-substance" title="&#x2F;obj&#x2F;structure&#x2F;ship_ammo">ship_ammo</span> - dropship weapon ammunition</li>
     <li><a href="obj/structure/support.html" title="&#x2F;obj&#x2F;structure&#x2F;support">wooden support pillar</a></li>
     </ul></li>
+    <li><a href="obj/vehicle.html" title="&#x2F;obj&#x2F;vehicle">vehicle</a></li>
     </ul></li>
     <li><a href="procpath.html" title="&#x2F;procpath">procpath</a> - Represents a proc or verb path.</li>
     <li class="has-children"><a href="turf.html" title="&#x2F;turf">turf</a><ul class="index-tree">
@@ -409,7 +414,7 @@ you want to show on the map, which you usually attach to &quot;vis_contents&quot
 </main>
 <footer>
     tgmc.dme
-    <a href="https://github.com/tgstation/TerraGov-Marine-Corps/tree/ae2889a74a9ddf8b39bbb8742a8426c298661326">ae2889a</a>
+    <a href="https://github.com/tgstation/TerraGov-Marine-Corps/tree/516400c7603755497064e09903170bd75c175871">516400c</a>
         (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.2.1</a></footer>
 </body>
 </html>

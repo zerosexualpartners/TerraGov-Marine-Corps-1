@@ -30,7 +30,7 @@ General Public License version 3.
 
 <h3 id="modules">Modules
 <aside>(24 modules,
-    94/4255 macros, 2.2%)</aside></h3>
+    94/4282 macros, 2.2%)</aside></h3>
 <ul class="index-tree">
     <li class="has-children"><span title="code">code</span><ul class="index-tree">
     <li class="has-children"><span title="code&#x2F;__DEFINES">__DEFINES</span><ul class="index-tree">
@@ -77,7 +77,7 @@ Thanks to forum_account for saving the day, the library can be found
 
 
 <h3 id="types">Types
-<aside>(115 detailed/240 documented/11341 total, 2.1%)</aside></h3>
+<aside>(118 detailed/244 documented/11352 total, 2.1%)</aside></h3>
 <ul class="index-tree">
     <li><a href="global.html" title="(global)">(global)</a></li>
     <li class="has-children"><span title="&#x2F;area">area</span><ul class="index-tree">
@@ -119,11 +119,15 @@ Thanks to forum_account for saving the day, the library can be found
     <li><a href="datum/component/shield.html" title="&#x2F;datum&#x2F;component&#x2F;shield">shield</a></li>
     <li><a href="datum/component/suit_autodoc.html" title="&#x2F;datum&#x2F;component&#x2F;suit_autodoc">suit_autodoc</a> - Autodoc component</li>
     </ul></li>
-    <li><span class="no-substance">config_entry&#x2F;string&#x2F;</span><span class="no-substance" title="&#x2F;datum&#x2F;config_entry&#x2F;string&#x2F;webmap_host">webmap_host</span> - Host of the webmap</li>
+    <li class="has-children"><span class="no-substance">config_entry&#x2F;</span><span class="no-substance" title="&#x2F;datum&#x2F;config_entry&#x2F;string">string</span><ul class="index-tree">
+    <li><span class="no-substance" title="&#x2F;datum&#x2F;config_entry&#x2F;string&#x2F;centcom_ban_db">centcom_ban_db</span> - URL for the CentCom Galactic Ban DB API</li>
+    <li><span class="no-substance" title="&#x2F;datum&#x2F;config_entry&#x2F;string&#x2F;webmap_host">webmap_host</span> - Host of the webmap</li>
+    </ul></li>
     <li class="has-children"><span title="&#x2F;datum&#x2F;controller">controller</span><ul class="index-tree">
     <li><a href="datum/controller/global_vars.html" title="&#x2F;datum&#x2F;controller&#x2F;global_vars">Global Variables</a></li>
     <li><a href="datum/controller/master.html" title="&#x2F;datum&#x2F;controller&#x2F;master">Master</a></li>
     <li class="has-children"><a href="datum/controller/subsystem.html" title="&#x2F;datum&#x2F;controller&#x2F;subsystem">fire coderbus</a><ul class="index-tree">
+    <li><a href="datum/controller/subsystem/events.html" title="&#x2F;datum&#x2F;controller&#x2F;subsystem&#x2F;events">Events</a></li>
     <li><a href="datum/controller/subsystem/job.html" title="&#x2F;datum&#x2F;controller&#x2F;subsystem&#x2F;job">Jobs</a></li>
     <li><span class="no-substance">processing&#x2F;</span><a href="datum/controller/subsystem/processing/dcs.html" title="&#x2F;datum&#x2F;controller&#x2F;subsystem&#x2F;processing&#x2F;dcs">Datum Component System</a></li>
     <li><a href="datum/controller/subsystem/runechat.html" title="&#x2F;datum&#x2F;controller&#x2F;subsystem&#x2F;runechat">Runechat</a></li>
@@ -155,6 +159,7 @@ Thanks to forum_account for saving the day, the library can be found
     <li><span class="no-substance" title="&#x2F;datum&#x2F;reagent&#x2F;toxin">Toxin</span> - Poison stuff</li>
     </ul></li>
     <li><a href="datum/reagents.html" title="&#x2F;datum&#x2F;reagents">reagents</a></li>
+    <li><a href="datum/round_event_control.html" title="&#x2F;datum&#x2F;round_event_control">round_event_control</a> - this datum is used by the events controller to dictate how it selects events</li>
     <li><span class="no-substance">signal&#x2F;</span><a href="datum/signal/subspace.html" title="&#x2F;datum&#x2F;signal&#x2F;subspace">subspace</a> - Here is the big, bad function that broadcasts a message given the appropriate
 parameters.</li>
     <li><a href="datum/sortInstance.html" title="&#x2F;datum&#x2F;sortInstance">sortInstance</a></li>
@@ -348,6 +353,7 @@ TO-DO -- Using it as a power measurement tool for cables etc. Nannek.</li>
     <li class="has-children"><span title="&#x2F;obj&#x2F;machinery&#x2F;computer">computer</span><ul class="index-tree">
     <li><a href="obj/machinery/computer/camera.html" title="&#x2F;obj&#x2F;machinery&#x2F;computer&#x2F;camera">security camera console</a></li>
     <li><span class="no-substance">camera_advanced&#x2F;</span><span class="no-substance" title="&#x2F;obj&#x2F;machinery&#x2F;computer&#x2F;camera_advanced&#x2F;remote_fob">FOB Construction Drone Control</span> - the camera computer</li>
+    <li><a href="obj/machinery/computer/intel_computer.html" title="&#x2F;obj&#x2F;machinery&#x2F;computer&#x2F;intel_computer">Intelligence computer</a></li>
     </ul></li>
     <li><span class="no-substance">door&#x2F;</span><a href="obj/machinery/door/airlock.html" title="&#x2F;obj&#x2F;machinery&#x2F;door&#x2F;airlock">\improper Airlock</a></li>
     <li><span class="no-substance" title="&#x2F;obj&#x2F;machinery&#x2F;holosign">holosign</span> - HOLOSIGN</li>
@@ -438,7 +444,7 @@ you want to show on the map, which you usually attach to &quot;vis_contents&quot
 </main>
 <footer>
     tgmc.dme
-    <a href="https://github.com/tgstation/TerraGov-Marine-Corps/tree/56b237cdb7107dd48b040fb3a0093158b4650d7d">56b237c</a>
+    <a href="https://github.com/tgstation/TerraGov-Marine-Corps/tree/747a150fd43cd8a0b5b148d653b86620d1e59722">747a150</a>
         (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.2.2</a></footer>
 </body>
 </html>

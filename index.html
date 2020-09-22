@@ -29,8 +29,8 @@ General Public License version 3.
 
 
 <h3 id="modules">Modules
-<aside>(26 modules,
-    106/4323 macros, 2.5%)</aside></h3>
+<aside>(28 modules,
+    107/4325 macros, 2.5%)</aside></h3>
 <ul class="index-tree">
     <li class="has-children"><span title="code">code</span><ul class="index-tree">
     <li class="has-children"><span title="code&#x2F;__DEFINES">__DEFINES</span><ul class="index-tree">
@@ -63,6 +63,10 @@ General Public License version 3.
     <li><span class="no-substance">datums&#x2F;</span><a href="code/datums/chatmessage.html" title="code&#x2F;datums&#x2F;chatmessage.dm">chatmessage</a></li>
     <li><span class="no-substance">game&#x2F;objects&#x2F;items&#x2F;reagent_containers&#x2F;</span><a href="code/game/objects/items/reagent_containers/syringes.html" title="code&#x2F;game&#x2F;objects&#x2F;items&#x2F;reagent_containers&#x2F;syringes.dm">syringes</a></li>
     <li class="has-children"><span title="code&#x2F;modules">modules</span><ul class="index-tree">
+    <li class="has-children"><span title="code&#x2F;modules&#x2F;asset_cache">asset_cache</span><ul class="index-tree">
+    <li><a href="code/modules/asset_cache/readme.html" title="code&#x2F;modules&#x2F;asset_cache&#x2F;readme.md">Asset cache system</a></li>
+    <li><span class="no-substance">transports&#x2F;</span><a href="code/modules/asset_cache/transports/asset_transport.html" title="code&#x2F;modules&#x2F;asset_cache&#x2F;transports&#x2F;asset_transport.dm">asset_transport</a></li>
+    </ul></li>
     <li><span class="no-substance">buildmode&#x2F;</span><a href="code/modules/buildmode/README.html" title="code&#x2F;modules&#x2F;buildmode&#x2F;README.md">Buildmode</a></li>
     <li><span class="no-substance">keybindings&#x2F;</span><a href="code/modules/keybindings/readme.html" title="code&#x2F;modules&#x2F;keybindings&#x2F;readme.md">In-code keypress handling system</a> - This whole system is heavily based off of forum_account's keyboard library.
 Thanks to forum_account for saving the day, the library can be found
@@ -79,7 +83,7 @@ Thanks to forum_account for saving the day, the library can be found
 
 
 <h3 id="types">Types
-<aside>(128 detailed/256 documented/11700 total, 2.2%)</aside></h3>
+<aside>(133 detailed/261 documented/11710 total, 2.2%)</aside></h3>
 <ul class="index-tree">
     <li><a href="global.html" title="(global)">(global)</a></li>
     <li class="has-children"><a href="area.html" title="&#x2F;area">area</a><ul class="index-tree">
@@ -108,6 +112,17 @@ Thanks to forum_account for saving the day, the library can be found
     </ul></li>
     </ul></li>
     <li><a href="datum/admins.html" title="&#x2F;datum&#x2F;admins">admins</a></li>
+    <li class="has-children"><span class="no-substance">asset&#x2F;</span><a href="datum/asset/simple.html" title="&#x2F;datum&#x2F;asset&#x2F;simple">simple</a> - If you don't need anything complicated.<ul class="index-tree">
+    <li><a href="datum/asset/simple/namespaced.html" title="&#x2F;datum&#x2F;asset&#x2F;simple&#x2F;namespaced">namespaced</a> - Namespace'ed assets (for static css and html files)
+When sent over a cdn transport, all assets in the same asset datum will exist in the same folder, as their plain names.
+Used to ensure css files can reference files by url() without having to generate the css at runtime, both the css file and the files it depends on must exist in the same namespace asset datum. (Also works for html)
+For example <code>blah.css</code> with asset <code>blah.png</code> will get loaded as <code>namespaces/a3d..14f/f12..d3c.css</code> and <code>namespaces/a3d..14f/blah.png</code>. allowing the css file to load <code>blah.png</code> by a relative url rather then compute the generated url with get_url_mappings().
+The namespace folder's name will change if any of the assets change. (excluding parent assets)</li>
+    </ul></li>
+    <li><a href="datum/asset_cache_item.html" title="&#x2F;datum&#x2F;asset_cache_item">asset_cache_item</a> - An internal datum containing info on items in the asset cache. Mainly used to cache md5 info for speed.</li>
+    <li class="has-children"><a href="datum/asset_transport.html" title="&#x2F;datum&#x2F;asset_transport">asset_transport</a> - Base browse_rsc asset transport<ul class="index-tree">
+    <li><a href="datum/asset_transport/webroot.html" title="&#x2F;datum&#x2F;asset_transport&#x2F;webroot">webroot</a> - CDN Webroot asset transport.</li>
+    </ul></li>
     <li><a href="datum/centcom_podlauncher.html" title="&#x2F;datum&#x2F;centcom_podlauncher">centcom_podlauncher</a></li>
     <li><a href="datum/chatmessage.html" title="&#x2F;datum&#x2F;chatmessage">Chat Message Overlay</a> - Datum for generating a message overlay on the map</li>
     <li class="has-children"><a href="datum/chemical_reaction.html" title="&#x2F;datum&#x2F;chemical_reaction">chemical_reaction</a><ul class="index-tree">
@@ -462,7 +477,7 @@ you want to show on the map, which you usually attach to &quot;vis_contents&quot
 </main>
 <footer>
     tgmc.dme
-    <a href="https://github.com/tgstation/TerraGov-Marine-Corps/tree/2fbdcf5c112086fab68df0c2eda9f6eeefd7013d">2fbdcf5</a>
+    <a href="https://github.com/tgstation/TerraGov-Marine-Corps/tree/29f50f424588489e579692fbb0e6efcb2d5d8b4c">29f50f4</a>
         (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.2.2</a></footer>
 </body>
 </html>
